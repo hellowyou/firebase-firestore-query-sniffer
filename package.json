@@ -1,12 +1,41 @@
 {
   "name": "firebase-firestore-query-sniffer",
-  "version": "0.0.1",
-  "description": "This will proxy calls to firebase firestore instance to keep track of query function callss",
-  "main": "index.js",
+  "version": "0.1.0",
+  "description": "Proxy calls to firebase firestore query methods",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellowyou/firebase-firestore-query-sniffer"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "test": "jest --config=jest.config.json",
+    "prepare": "npm run build && husky install"
   },
   "author": "Virnon Tutor",
   "license": "ISC",
-  "homepage": "https://github.com/hellowyou/firebase-firestore-query-sniffer"
+  "bugs": {
+    "url": "https://github.com/hellowyou/firebase-firestore-query-sniffer/issues"
+  },
+  "homepage": "https://github.com/hellowyou/firebase-firestore-query-sniffer",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "firebase": "^8.3.2",
+    "husky": ">=6",
+    "jest": "^26.6.3",
+    "lint-staged": ">=10",
+    "prettier": "2.2.1",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
+  },
+  "peerDependencies": {
+    "firebase": "8.x"
+  },
+  "lint-staged": {
+    "*.{ts,js}": "prettier --write"
+  }
 }
