@@ -1,0 +1,12 @@
+{
+  "name": "firebase-firestore-query-sniffer",
+  "version": "0.0.1",
+  "description": "This will proxy calls to firebase firestore instance to keep track of query function callss",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Virnon Tutor",
+  "license": "ISC",
+  "homepage": "https://github.com/hellowyou/firebase-firestore-query-sniffer"
+}
