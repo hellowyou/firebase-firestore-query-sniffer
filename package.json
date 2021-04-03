@@ -1,6 +1,6 @@
 {
   "name": "firebase-firestore-query-sniffer",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Proxy calls to firebase firestore query methods",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,7 +14,8 @@
   "scripts": {
     "build": "tsc",
     "test": "jest --config=jest.config.json",
-    "prepare": "npm run build && husky install"
+    "prepare": "npm run build && husky install",
+    "prepublishOnly": "npm test"
   },
   "author": "Virnon Tutor",
   "license": "ISC",
