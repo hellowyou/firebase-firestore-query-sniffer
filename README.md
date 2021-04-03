@@ -1,5 +1,7 @@
 # Firebase Firestore Query Sniffer
 
+[![npm version](https://badge.fury.io/js/firebase-firestore-query-sniffer.svg)](https://badge.fury.io/js/firebase-firestore-query-sniffer)
+
 > Keeps track of method calls from a firestore query instance
 
 ## Table of contents
